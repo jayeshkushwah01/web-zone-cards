@@ -1,0 +1,780 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: Graphik-bold;
+    src: url(font/GraphikSemibold.otf);
+}
+@font-face {
+    font-family: Graphik-light;
+    src: url(font/GraphikLight.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Graphik-bold, sans-serif;
+}
+
+p{
+    font-family: Graphik-light, sans-serif;
+}
+
+
+body { font-family: sans-serif; }
+
+    header{
+        display: flex;
+        width: 100vw;
+        min-height: 80px;
+        padding: 0 40px;
+    }
+    header .logo{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    header .logo h2{
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+
+    header .navigation{
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    header .navigation ul{
+        margin-bottom: 0;
+    }
+
+    header .navigation nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    header .navigation nav ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+header .navigation nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container{
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+
+#menu .nav-bar { list-style:none; margin-top: 25px; }
+#menu .nav-bar li { display:inline; padding:0 10px; }
+
+#menu .nav-bar li a {
+    text-decoration: none;
+    padding-left: 25px;
+    text-transform: uppercase;
+    color: #333;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+/*.nav-bar .nav-button-home a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/home.gif") no-repeat 0px -2px transparent; }*/
+
+/*.nav-bar .nav-button-services a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/services.gif") no-repeat 0px -2px transparent; }*/
+
+/*.nav-bar .nav-button-products a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/products.gif") no-repeat 0px -2px transparent; }*/
+
+
+/* -----Card Section------ */
+.card-container{
+    display: flex !important;
+    min-height: 85vh !important;
+
+}
+
+.card{
+     /*background: linear-gradient(125deg, #2d0014, #8c0542, #ff298b);*/
+     /*background: linear-gradient(125deg, #EE5166, #F08EFC);  */
+    background: linear-gradient(150deg,#000,#004471, #004471);
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+    min-height: 700px;
+    overflow: hidden;
+
+}
+
+.card .content, .card .image{
+    width: 50%;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .content, .card .image img{
+
+    /*width: 800px;*/
+}
+
+.card .content{
+    color: #fff;
+    padding-left:120px;
+}
+
+.card .content h2{
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.card .content p{
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: -0.3px;
+    font-weight: 700;
+    line-height: 1.55;
+}
+
+.card .content p a{
+    color: #fff;
+}
+
+.price-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 60%;
+    min-width: 350px;
+    padding: 40px 20px;
+    gap: 20px;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.price-card select{
+    padding: 10px;
+    border: 1.5px solid rgb(68, 68, 68);
+    border-radius: 5px;
+}
+
+.price-card a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 13px;
+    border-radius: 25px;
+}
+
+
+
+.price-card span{
+    color: black;
+    font-size: 12px;
+    font-family: Graphik-light, sans-serif;
+}
+/*@media only screen and (max-width: 1250px){*/
+/*    .card-container .card .image{*/
+/*        width: 50px; !important;*/
+/*    }*/
+/*}*/
+
+
+/* ------Video Section------ */
+.video-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px auto;
+    min-height: 100vh;
+}
+
+.video-container .title{
+    padding: 70px 0 30px 0;
+}
+.video-container .video{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-container .video video{
+    width: 100%;
+}
+
+
+/* ---------Feature Card-------- */
+
+.feature-container{
+    min-height: 30vh;
+    width: 100vw;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-container .title{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.feature-container .card-container-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.feature-container .card-container-box .feature-card{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-height: 150px;
+}
+
+.feature-container .card-container-box .feature-card .card-icon{
+    height: 60%;
+}
+.feature-container .card-container-box .feature-card .card-content{
+    height: 40%;
+}
+
+.feature-container .card-container-box .feature-card .card-content h3{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+
+
+/* ---------NFC --------- */
+
+.nfc-container{
+    min-height: 90vh;
+    padding: 40px;
+}
+
+.nfc-container .title{
+    margin-bottom: 60px;
+}
+
+.nfc-container .container-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nfc-container .container-inner .banner-image{
+    width: 45%;
+}
+
+.nfc-container .container-inner .banner-details{
+    width: 50%;
+    min-height: 470px;
+}
+
+.nfc-container .container-inner .banner-details h3{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.nfc-container .container-inner .banner-details p{
+    letter-spacing: 1.1px;
+}
+
+
+.nfc-container .content p{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.nfc-container .feature{
+    padding: 40px !important;
+}
+
+.nfc-container .feature ul{
+    line-height: 2;
+}
+
+
+.nfc-container .feature h4{
+    font-family: Graphik-light, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.nfc-container .container-inner span{
+    font-size: 15px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.nfc-container .container-inner a{
+    font-family: Graphik-light, sans-serif;
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 35px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+
+
+/*------card2------*/
+
+.card-container-2{
+    display: flex !important;
+    min-height: 80vh !important;
+    width: 100vw;
+    background-color: #f8f8f8;
+}
+
+.card-2{
+    display: flex;
+    margin: 40px;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.card-2 .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.card-2 .content .content-box{
+    width: 70%;
+}
+
+.card-2 .content .content-box h2{
+    font-size: 44px;
+    line-height: 1;
+    font-family: Graphik-light, sans-serif !important;
+}
+
+.card-2 .content .content-box p{
+    font-size: 18px;
+    line-height: 1.2;
+    font-family: Graphik-light, sans-serif !important;
+    margin-top: 24px;
+    font-weight: bold;
+    color: #383838;
+}
+
+.card-2 .image{
+    width: 50%;
+}
+
+
+/* option section */
+
+.option-container{
+    width: 100vw;
+    min-height: 50vh;
+    padding: 40px;
+}
+
+.option-container h2{
+    font-family: Graphik-medium, sans-serif;
+}
+
+.option-card-section{
+    display: flex;
+    padding-top: 40px;
+    width: 100%;
+    margin: auto;
+}
+.option-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 200px;
+}
+
+.option-card-container .option-card{
+    display: flex;
+}
+
+.option-card-container .option-card h3{
+    font-size: 18px;
+    font-family: Graphik-bold, sans-serif;
+}
+
+.option-card-container .option-card .option-image{
+    padding-left: 20px;
+}
+
+
+/*------card3------*/
+
+.card-container-3{
+    display: flex ;
+    min-height: 60vh;
+    background-color: #204949;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-3{
+    background-color: #204949;
+    display: flex;
+    width: 100%;
+    /*padding: 5px 0;*/
+    /*min-height: 70px;*/
+    overflow: hidden;
+    color: white;
+    align-items: center;
+}
+.card-3 .content{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+
+}
+
+.card-3 .content .content-box h2{
+    font-size: 60px;
+    font-weight: 50;
+    margin: 0px 200px;
+}
+
+.card-3 .image{
+    display: flex;
+    width: 50%;
+}
+
+.card-3 .image .price-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+    gap: 20px;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.card-3 .image .price-card select{
+    padding: 10px;
+    border: 1.5px solid rgb(68, 68, 68);
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.card-3 .image .price-card a{
+    text-decoration: none;
+    background-color:#2d0014;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 13px;
+    border-radius: 25px;
+}
+.card-3 .image .price-card span{
+    color: black;
+    font-size: 13px;
+}
+
+
+/* ----------Card-container-2---------- */
+
+
+
+
+/*--------Setup section-----------*/
+.setup-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 60vh;
+    width: 100vw;
+}
+
+.setup-container .title{
+    padding: 40px;
+}
+
+.setup-image-container{
+    display: flex;
+    /*margin-top: 20px;*/
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    min-height: 400px;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.image-container .image-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    width: 100%;
+    background-color: #8f8a93;
+    margin-bottom: 10px;
+    position: relative;
+ 
+}
+
+.image-container .content{
+    min-height: 150px;
+}
+
+.image-container .content strong{
+    font-size: 20px;
+    font-family: 'GRAPHIK-LIGHT';
+}
+.image-container .content p{
+    font-size: 18px;
+    font-family: 'GRAPHIK-LIGHT';
+    margin-top: 15px;
+}
+
+.image-item img{
+    width: 150px;
+}
+.setup-content{
+    font-size: 18px;
+}
+
+
+
+.smart-card-img{
+    display: flex;
+    /*background: image();*/
+    background: image-set("images/smart_cards1_img2.jpeg");
+    height: 60vh;
+    width: 100vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+.smart-content-box{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.83) ;
+    width: 30%;
+    height: 60%;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 30px;
+    margin-right: 40px;
+}
+.smart-content-box h2{
+    font-size: 30px;
+}
+
+
+
+/*-------------------------------Student Id Page-------------------------------------*/
+
+
+.card2{
+    background: linear-gradient(125deg, #2d0014, #8c0542, #ff298b);
+    /*background: linear-gradient(125deg, #EE5166, #F08EFC);  */
+    /*background: linear-gradient(150deg,#000,#004471, #004471);*/
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+    min-height: 700px;
+    overflow: hidden;
+
+}
+
+.card2 .content, .card .image{
+    width: 50%;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card2 .content, .card .image img{
+
+    /*width: 800px;*/
+}
+
+.card2 .content{
+    color: #fff;
+    padding-left:120px;
+}
+
+.card2 .content h2{
+    font-size: 50px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.card2 .content p{
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: -0.3px;
+    font-weight: 700;
+    line-height: 1.55;
+}
+
+.card2 .content p a{
+    color: #fff;
+}
+
+
+/* -------------Navigation Bar------------ */
+.logo {
+    max-width: 200px;
+}
+.navbar {
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    padding: 10px 50px;
+}
+.logo h1{
+    margin-left: 10px;
+}
+.push-left {
+    margin-left: auto;
+}
+/* Menu */
+.hamburger {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    outline: none;
+    height: 30px;
+    position: relative;
+    width: 30px;
+    z-index: 1000;
+}
+
+.hamburger-line {
+    background: #272727;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    transition: all 0.2s ease-out;
+    width: 100%;
+}
+.hamburger:hover .hamburger-line {
+    background: #777;
+}
+.hamburger-line-top {
+    top: 3px;
+}
+.menu-active .hamburger-line-top {
+    top: 50%;
+    transform: rotate(45deg) translatey(-50%);
+}
+.hamburger-line-middle {
+    top: 50%;
+    transform: translatey(-50%);
+}
+.menu-active .hamburger-line-middle {
+    left: 50%;
+    opacity: 0;
+    width: 0;
+}
+.hamburger-line-bottom {
+    bottom: 3px;
+}
+.menu-active .hamburger-line-bottom {
+    bottom: 50%;
+    transform: rotate(-45deg) translatey(50%);
+}
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: all 0.25s ease-in;
+}
+
+.nav-menu .menu-item a {
+    color: #444;
+    display: block;
+    line-height: 30px;
+    margin: 0px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav-menu .menu-item a:hover {
+    color: #777;
+    text-decoration: underline;
+}
+
+.nav__link:hover + .sub-nav {
+    display: block;
+}
+.sub-nav:hover {
+    display: block;
+}
+
+
+/* ------------ID Banner----------- */
+.id-banner{
+    position: relative;
+    background-color: #000;
+    width: 100vw;
+}
+
+.id-banner .text-content{
+    position: absolute;
+    width: 490px;
+    top: 45%;
+    left: 5%;
+    color: #fff;
+}
+
+.id-banner .text-content span{
+    background-color: #0dcc6c;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.id-banner .text-content h2{
+    margin-top: 20px;
+    font-size: 48px;
+    line-height: 1.3;
+}
+.id-banner .text-content p{
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
