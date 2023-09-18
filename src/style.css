@@ -79,8 +79,8 @@ header .navigation nav ul li a{
 }
 
 .container{
-    padding-top: 40px !important;
-    padding-bottom: 40px !important;
+    /*padding-top: 40px !important;*/
+    /*padding-bottom: 40px !important;*/
 }
 
 
@@ -657,7 +657,8 @@ header .navigation nav ul li a{
 }
 .navbar {
     align-items: center;
-    background: #fff;
+    background: black;
+    color: white;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: row;
@@ -726,16 +727,22 @@ header .navigation nav ul li a{
 }
 
 .nav-menu .menu-item a {
-    color: #444;
+    /*color: #444;*/
+    color: white;
     display: block;
     line-height: 30px;
     margin: 0px 10px;
+    padding: 0px 8px;
     text-decoration: none;
     text-transform: uppercase;
+    border-radius: 20px;
 }
 .nav-menu .menu-item a:hover {
-    color: #777;
-    text-decoration: underline;
+    /*color: #777;*/
+    /*text-decoration: underline;*/
+    color: #0dcc6c;
+    /*color: black;*/
+    /*background-color: #0dcc6c;*/
 }
 
 .nav__link:hover + .sub-nav {
@@ -750,13 +757,23 @@ header .navigation nav ul li a{
 .id-banner{
     position: relative;
     background-color: #000;
+
     width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.id-banner .banner-video{
+    display: flex;
+    /*background-color: black;*/
+    background: image-set("https://149346090.v2.pressablecdn.com/wp-content/uploads/2023/07/GenerativeAI-Featured3-1600x900.jpg");
+    width: 90%;
+
 }
 
 .id-banner .text-content{
     position: absolute;
-    width: 490px;
-    top: 45%;
+    width: 35%;
+    top: 40%;
     left: 5%;
     color: #fff;
 }
